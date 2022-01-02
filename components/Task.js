@@ -1,7 +1,7 @@
 import React from 'react';
 import { View, Text, StyleSheet } from 'react-native';
 
-const Task = (props) => {
+export default function Task(props) {
 	return (
 		<View style={styles.item}>
 			<View style={styles.itemLeft}>
@@ -36,9 +36,6 @@ const styles = StyleSheet.create({
 		borderRadius: 5,
 		marginRight: 15
 	},
-	itemText: {
-		maxWidth: '80%',
-	},
 	circular: {
 		width: 12,
 		height: 12,
@@ -47,5 +44,3 @@ const styles = StyleSheet.create({
 		borderRadius: 5
 	}
 });
-
-export default Task;
