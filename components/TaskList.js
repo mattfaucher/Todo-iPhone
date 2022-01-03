@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import {
 	StyleSheet,
-	Text,
 	View,
 	Keyboard,
 	ScrollView
@@ -15,6 +14,7 @@ export default function TaskList() {
 
 	const handleAddTask = () => {
 		Keyboard.dismiss();
+		if (task === '') return;
 		setTaskItems([...taskItems, task]);
 		setTask(null);
 	}

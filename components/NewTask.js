@@ -36,8 +36,8 @@ const styles = StyleSheet.create({
 		bottom: 60,
 		width: '100%',
 		flexDirection: 'row',
-		justifyContent: 'space-between',
-		alignItems: 'center'
+		justifyContent: 'space-around',
+		alignItems: 'center',
 	},
 	input: {
 		backgroundColor: '#FFF',
